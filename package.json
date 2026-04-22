@@ -1,0 +1,21 @@
+{
+  "name": "5.-backend_node_delivery_app_final",
+  "version": "1.0.0",
+  "description": "Backend de la app delivery",
+  "keywords": [
+    "flutter",
+    "delivery",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "author": "Omar",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "http": "^0.0.1-security"
+  }
+}
