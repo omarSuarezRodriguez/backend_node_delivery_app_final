@@ -4,6 +4,12 @@ const http = require('http');
 const logger = require('morgan');
 const cors = require('cors');
 
+/*
+*   IMPORTAR RUTAS
+*/  
+const usersRoutes = require('./routes/userRoutes');
+
+
 
 // Ejecutamos métodos
 const app = express();
@@ -23,6 +29,12 @@ app.use(cors());
 app.disable('x-powered-by');
 
 app.set('port', port);
+
+/*
+*   LLAMADO DE LAS RUTAS
+*/
+usersRoutes(app);
+
 
 
 // Método para arrancar servidor
